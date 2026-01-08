@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
+import React from "react";
 import "./globals.css";
 
 // Fontes (Google Fonts) via next/font: carrega só o necessário, com otimizações do Next.
