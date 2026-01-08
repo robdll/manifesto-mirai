@@ -38,6 +38,6 @@ npm run start
 ## Personalizações rápidas
 
 - **Textos**: edite diretamente em `app/page.tsx`.
-- **Cores/visual**: ajuste `tailwind.config.ts` (paleta) e classes Tailwind nos componentes.
+- **Cores/visual**: ajuste os tokens em `app/globals.css` (bloco `@theme`) e as classes Tailwind nos componentes.
 
 

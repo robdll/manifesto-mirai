@@ -1,6 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+/* Tailwind v4 (CSS-first):
+   Definimos tokens de tema aqui para manter classes como `text-ink`, `bg-leaf`, etc. */
+@theme {
+  --color-ink: #0f172a;
+  --color-mist: #f8fafc;
+  --color-sand: #f1f5f9;
+  --color-leaf: #14532d;
+}
 
 /* Estilos globais mínimos: foco em legibilidade, contraste e toque (mobile-first). */
 

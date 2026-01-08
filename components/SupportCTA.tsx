@@ -16,6 +16,8 @@ export default function SupportCTA() {
   // Evita acessar localStorage durante SSR.
   useEffect(() => {
     try {
+      // `localStorage` é um "sistema externo" do ponto de vista do React.
+      // Aqui sincronizamos o estado com o valor salvo no navegador (sem dados pessoais).
       setSupported(window.localStorage.getItem(STORAGE_KEY) === "true");
     } catch {
       // Se o navegador bloquear storage, o CTA continua funcionando (só não persiste).
