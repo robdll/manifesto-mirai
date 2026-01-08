@@ -8,6 +8,17 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Fundo com gradiente suave (mantém leitura via cards claros). */
+.mirai-gradient {
+  background: #2a7b9b;
+  background: linear-gradient(
+    135deg,
+    rgba(42, 123, 155, 1) 0%,
+    rgba(87, 199, 133, 1) 50%,
+    rgba(237, 221, 83, 1) 100%
+  );
+}
+
 /* Melhor visibilidade de foco para teclado (acessibilidade). */
 :focus-visible {
   outline: 2px solid #14532d;

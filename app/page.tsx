@@ -12,7 +12,7 @@ function Section({
   return (
     <section
       id={id}
-      className="scroll-mt-24 rounded-2xl bg-white border border-slate-200 p-5 sm:p-6 shadow-sm"
+      className="scroll-mt-24 rounded-2xl bg-white/90 backdrop-blur border border-slate-200 p-5 sm:p-6 shadow-sm"
     >
       <h2 className="text-lg sm:text-xl font-semibold tracking-tight">{title}</h2>
       <div className="mt-3 text-sm sm:text-base leading-relaxed text-slate-700">
@@ -26,7 +26,7 @@ export default function Page() {
   return (
     <main className="mx-auto w-full max-w-3xl px-4 py-10 sm:py-14">
       {/* HERO */}
-      <header className="rounded-3xl bg-gradient-to-b from-white to-sand border border-slate-200 p-6 sm:p-10 shadow-sm">
+      <header className="rounded-3xl bg-white/85 backdrop-blur border border-slate-200 p-6 sm:p-10 shadow-sm">
         <p className="text-xs font-semibold tracking-wide text-slate-600">
           Condomínio Dona Miraí
         </p>

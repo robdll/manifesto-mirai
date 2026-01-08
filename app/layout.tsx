@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className="min-h-dvh antialiased bg-mist text-ink">
+      <body className="min-h-dvh antialiased text-ink mirai-gradient">
         {children}
       </body>
     </html>
