@@ -1,5 +1,21 @@
 import type { Metadata } from "next";
+import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
+
+// Fontes (Google Fonts) via next/font: carrega só o necessário, com otimizações do Next.
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["300", "400", "500"],
+  variable: "--font-sans",
+  display: "swap",
+});
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-display",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Condomínio Dona Miraí — Manifesto por uma gestão melhor",
@@ -21,7 +37,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className="min-h-dvh antialiased text-ink mirai-gradient">
+      <body
+        className={[
+          "min-h-dvh antialiased",
+          inter.variable,
+          playfair.variable
+        ].join(" ")}
+      >
         {children}
       </body>
     </html>
